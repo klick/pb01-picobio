@@ -1,0 +1,33 @@
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-font-size($min-font-size, $max-font-size, $min-line-height, $max-line-height) {
+  $u1: unit(375px);
+  $u2: unit(1200px);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      line-height: $min-line-height;
+      @media screen and (min-width: 375px) {
+        font-size: calc( #{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{375px}) / #{strip-unit(1100px - 375px)}));
+        line-height: calc(#{$min-line-height} + #{strip-unit($max-line-height - $min-line-height)} * ((100vw - #{375px}) / #{strip-unit(1100px - 375px)}));
+      }
+      @media screen and (min-width: 500px) {
+        font-size: calc( #{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{375px}) / #{strip-unit(1100px - 375px)}) * 0.7 );
+        line-height: calc(#{$min-line-height} + #{strip-unit($max-line-height - $min-line-height)} * ((100vw - #{375px}) / #{strip-unit(1100px - 375px)}) * 0.7);
+      }
+      @media screen and (min-width: 750px) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{375px}) / #{strip-unit(1100px - 375px)}) * 0.6 );
+        line-height: calc(#{$min-line-height} + #{strip-unit($max-line-height - $min-line-height)} * ((100vw - #{375px}) / #{strip-unit(1100px - 375px)}) * 0.6);
+      }
+      @media screen and (min-width: 1500px) {
+        font-size: $max-font-size;
+        line-height: $max-line-height;
+      }
+    }
+  }
+}

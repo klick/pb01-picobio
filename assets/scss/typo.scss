@@ -1,0 +1,94 @@
+/*************************
+* TYPO
+**************************/
+
+$global-font-size: 16px;
+$global-line-height: 23px;
+
+// Font Families
+$font-medium: GT-America-Mono-Medium, Helvetica, Arial, sans-serif;
+$font-regular: GT-America-Standard-Regular, Helvetica, Arial, sans-serif;
+
+// TODO: use mixin for fluid fonts (not necessary for itemslist)
+// @include fluid-font-size($min-font-size, $max-font-size, $min-line-height, $max-line-height);
+
+@mixin typo-text() {
+  font-size: 16px;
+  line-height: 23px;
+  font-family: $font-regular;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin typo-list-name() {
+    font-size: 22px;
+    line-height: 28px;
+    font-family: $font-medium;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin typo-list-kreis() {
+  font-size: 10px;
+  line-height: 20px;
+  font-family: $font-medium;
+  font-weight: normal;
+  font-style: normal;
+
+  text-transform: uppercase;
+}
+
+@mixin typo-list-subcategories() {
+  font-size: 12px;
+  line-height: 15px;
+  font-family: $font-medium;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin typo-list-linkbox() {
+  font-size: 10px;
+  line-height: 20px;
+  font-family: $font-medium;
+  font-weight: normal;
+  font-style: normal;
+
+  text-transform: uppercase;
+}
+
+@mixin typo-blackbox() {
+  font-size: 22px;
+  line-height: 28px;
+  font-family: $font-medium;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin typo-blackbox-small() {
+  font-size: 12px;
+  line-height: 15px;
+  font-family: $font-medium;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin typo-static-name() {
+  @include fluid-font-size(22px, 70px, 28px, 88px);
+  font-family: $font-medium;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin typo-static-text() {
+  @include fluid-font-size(16px, 16px, 23px, 23px);
+  font-family: $font-regular;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin typo-location-filter-text() {
+  @include fluid-font-size(22px, 70px, 28px, 88px);
+  font-family: $font-medium;
+  font-weight: normal;
+  font-style: normal;
+}

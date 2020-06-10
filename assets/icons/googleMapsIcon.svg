@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="18px" viewBox="0 0 13 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Pin 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="layouts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="m210" transform="translate(-37.000000, -415.000000)" fill-rule="nonzero" stroke="#FFFFFF">
+            <g id="Group-12" transform="translate(0.000000, 73.000000)">
+                <g id="Group-9" transform="translate(29.000000, 335.000000)">
+                    <g id="Pin-2" transform="translate(9.000000, 8.000000)">
+                        <g id="Pin-light-outline">
+                            <path d="M5.5,5.9278508e-16 C2.46384743,0.0033065897 0.00340992063,2.38918539 0,5.33333333 C0,7.67333333 3.4375,13.35 4.91425,15.6826667 C5.03940146,15.8799256 5.26116133,16.0000652 5.5,16 C5.73929169,16.0011034 5.96163836,15.8803928 6.08575,15.682 C7.5625,13.3506667 11,7.676 11,5.33333333 C10.9965901,2.38918539 8.53615257,0.0033065897 5.5,5.9278508e-16 Z" id="Path"></path>
+                            <path d="M5.5,7.66666667 C4.17106482,7.66666667 3.09375,6.62199775 3.09375,5.33333333 C3.09375,4.04466892 4.17106482,3 5.5,3 C6.82893518,3 7.90625,4.04466892 7.90625,5.33333333 C7.90625,6.62199775 6.82893518,7.66666667 5.5,7.66666667 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
